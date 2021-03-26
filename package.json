@@ -1,17 +1,17 @@
 {
-  "name": "homebrew",
+  "name": "home-brew-manager",
   "version": "0.1.0",
   "description": "User configuration for brew package manager",
   "main": "index.js",
   "bin": {
-    "homebrew": "index.js"
+    "home-brew-manager": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yvan-sraka/homebrew.git"
+    "url": "git+https://github.com/yvan-sraka/home-brew-manager.git"
   },
   "keywords": [
     "home-manager",
@@ -21,7 +21,7 @@
   "author": "Yvan SRAKA <yvan@sraka.xyz>",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/yvan-sraka/homebrew/issues"
+    "url": "https://github.com/yvan-sraka/home-brew-manager/issues"
   },
-  "homepage": "https://github.com/yvan-sraka/homebrew#readme"
+  "homepage": "https://github.com/yvan-sraka/home-brew-manager#readme"
 }

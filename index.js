@@ -19,7 +19,7 @@ const saveCfg = (cfgPath, jsonData) =>
 const readCfg = cfgPath => {
     if (!require('fs').existsSync(cfgPath)) {
         console.log('\x1b[31m%s\x1b[0m', `Error: "${cfgPath}" not found ...`)
-        console.log("You can generate it with `homebrew init` command.")
+        console.log("You can generate it with `home-brew-manager init` command.")
         process.exit(1)
     }
     return JSON.parse(require('fs').readFileSync(cfgPath))
@@ -35,7 +35,7 @@ const computeDiff = (currentCfg, wantedCfg) => {
 }
 
 class Brew {
-    static cfgPath = `${require('os').homedir()}/.homebrew.json`
+    static cfgPath = `${require('os').homedir()}/.home-brew-manager.json`
 
     static detectCfg = () => runCmd('brew list', false)
         .split('\n').filter(x => x != '')
@@ -61,12 +61,12 @@ if (match(['init'])) {
     console.log('0.1.0')
 } else if (match(['-h', '--help'])) {
     console.log(`
-Homebrew 0.1.0
+home-brew-manager 0.1.0
 Yvan SRAKA <yvan@sraka.xyz>
 User configuration for brew package manager
 
 USAGE:
-    homebrew <COMMAND>
+    home-brew-manager <COMMAND>
 
 FLAGS:
     -h, --help       Prints help information
@@ -76,5 +76,5 @@ COMMANDS:
     init
     switch [--upgrade]
 `)} else {
-    console.log('Command not found, run `homebrew --help` for usage info')
+    console.log('Command not found, run `home-brew-manager --help` for usage info')
 }
