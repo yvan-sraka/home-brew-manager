@@ -1,0 +1,27 @@
+{
+  "name": "homebrew",
+  "version": "0.1.0",
+  "description": "User configuration for brew package manager",
+  "main": "index.js",
+  "bin": {
+    "homebrew": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvan-sraka/homebrew.git"
+  },
+  "keywords": [
+    "home-manager",
+    "brew",
+    "macos"
+  ],
+  "author": "Yvan SRAKA <yvan@sraka.xyz>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/yvan-sraka/homebrew/issues"
+  },
+  "homepage": "https://github.com/yvan-sraka/homebrew#readme"
+}
